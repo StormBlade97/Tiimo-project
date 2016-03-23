@@ -1,0 +1,150 @@
+body{
+  font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: black;
+    z-index: 0;
+    -webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+}
+
+.center{
+    float:center;
+}
+.jumbotron{
+  margin-bottom: 0px;
+  background: #4d4dff,
+  background: -webkit-linear-gradient(left top, #00c6ff, #0072ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #00c6ff, #0072ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #00c6ff, #0072ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #00c6ff, #0072ff); /* Standard syntax */
+  padding: 100px 25px;
+  font-family: Montserrat, sans-serif;
+}
+.text-white{
+  color:white;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.container-fluid .non-nav{
+  margin-top: 0px;
+  padding: 80px 50px;
+}
+.progress{
+  height: 50px;
+}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.navbar {
+    margin-bottom: 0px;
+    background-color: #FF9C2A;
+    z-index: 9999;
+    border: 0;
+    font-size: 13px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+    padding: 0px;
+}
+
+#nav-container{
+    margin-left: 0;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #0072ff !important;
+    background-color:  #fff !important;
+}
+
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+//animations
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
