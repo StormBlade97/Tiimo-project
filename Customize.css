@@ -1,29 +1,39 @@
 body{
-  font: 400 15px Lato, sans-serif;
+    font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: black;
     z-index: 0;
+    padding-top: 60px;
+
     -webkit-animation: AnimationName 30s ease infinite;
--moz-animation: AnimationName 30s ease infinite;
-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
 
-@-webkit-keyframes AnimationName {
+    @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
+    }
+    @-moz-keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
+    }
+    @keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-}
-}
+    }
 
+}
+#mapimg
+{
+    display:none;
+}
+#modaltrigger
+{
+    display: none;
+}
 .center{
     float:center;
 }
@@ -64,13 +74,13 @@ animation: AnimationName 30s ease infinite;
 .navbar {
     margin-bottom: 0px;
     background-color: #FF9C2A;
-    z-index: 9999;
     border: 0;
     font-size: 13px !important;
     line-height: 1.42857143 !important;
     letter-spacing: 2px;
     border-radius: 0;
     padding: 0px;
+    z-index: 1;
 }
 
 #nav-container{
@@ -91,6 +101,10 @@ animation: AnimationName 30s ease infinite;
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
+}
+.map-status li p 
+{
+    list-style-type: none;
 }
 footer .glyphicon {
     font-size: 20px;

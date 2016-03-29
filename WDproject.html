@@ -5,20 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Timo's slaves</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="favicon.ico" >
-  <link rel="icon" href="favicon.ico">
   <!-- Externals link -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="Customize.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="Customscript.js"></script>
+  <script src="javascript.js"></script>
   <!-- Fonts -->
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 </head>
 <body id="gradient" data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- Modal -->
+<button id="modaltrigger" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Machine report</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="map-status">
+          <li><p id="status_id">Machine ID:</p></li>
+          <li><p id="status_state">Status:</p></li>
+          <li><p id="next_maintenance">Next scheduled maintenance: </p></li>
+          <li><p id="error_code">Error code: </p></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button id="closemodal" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- nav -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid" id="nav-container">
@@ -43,3 +64,10 @@
     </div>
   </div>
 </nav>
+<div class="container non-nav text-center">
+  <h1>MAP REPRESENTATON</h>
+  <h4> A visual guide to where needs fixing </h4>
+  <img id="mapimg" width="1315" height="580" src="map.png" alt="The Scream">
+  <canvas id="map" width="1315" height="580">
+  </div>
+</div>
